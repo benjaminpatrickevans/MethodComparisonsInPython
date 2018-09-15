@@ -1,0 +1,1 @@
+NOTE: This file came from: https://github.com/citiususc/stac (http://tec.citius.usc.es/stac/doc/index.html), but has not been added to pip.
