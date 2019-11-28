@@ -5,7 +5,8 @@ All work is implemented in python.
 
 A summary of the current ltierature is given in the slides below
 
-[slides]
+
+![title.png](https://github.com/ben-ix/MethodComparisonsInPython/blob/master/Significance%20Testing%20for%20Classification.pdf)
 
 ## Statistical comparisons of 2 classifiers on a single dataset
 
