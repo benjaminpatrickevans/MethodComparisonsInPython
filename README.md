@@ -35,3 +35,7 @@ This is shown in:
 If we are comparing multiple methods across multiple datasets, the suggestions in [Statistical Comparisons of Classifiers over Multiple Data Sets (2006)](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.141.3142&rep=rep1&type=pdf) are to perform a Friedman test, paired with either Nemenyi post hoc analysis (for comparing all methods), or FWER correction if comparing to a control classifier (i.e. comparing several methods to one dataset, not pairwise comparisons).
 
 Both tests are shown in the following  [Jupyter notebook](StatisticalTests.ipynb)
+
+---
+
+<sup>*All credits to the original authors of the above articles*</sup>
