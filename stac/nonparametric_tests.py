@@ -338,7 +338,7 @@ def hochberg_test(ranks, control=None):
         Y. Hochberg, A sharper Bonferroni procedure for multiple tests of significance, Biometrika 75 (1988) 800–803.
     """
     k = len(ranks)
-    values = ranks.values()
+    values = list(ranks.values())
     keys = list(ranks.keys())
     if not control :
         control_i = values.index(min(values))
