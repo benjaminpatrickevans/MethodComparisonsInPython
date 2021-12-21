@@ -339,7 +339,7 @@ def hochberg_test(ranks, control=None):
     """
     k = len(ranks)
     values = ranks.values()
-    keys = ranks.keys()
+    keys = list(ranks.keys())
     if not control :
         control_i = values.index(min(values))
     else:
