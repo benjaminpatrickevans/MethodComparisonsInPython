@@ -350,8 +350,7 @@ def hochberg_test(ranks, control=None):
     p_values = [2*(1-st.norm.cdf(abs(z))) for z in z_values]
     # Sort values by p_value so that p_0 < p_1
     p_values, z_values, comparisons = map(list, zip(*sorted(zip(p_values, z_values, comparisons), key=lambda t: t[0])))
-    adj_p_values = [min(max((k-(j+1))*p_values[j] for j in range(i+1)), 1) for i in range(k-1)]
-
+    adj_p_values = [min(max((k-j)*p_values[j-1] for j in range(k-1, i, -1)), 1) for i in range(k-1)]
     return comparisons, z_values, p_values, adj_p_values
 
 def li_test(ranks, control=None):
